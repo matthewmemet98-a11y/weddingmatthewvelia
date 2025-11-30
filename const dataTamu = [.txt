@@ -1,0 +1,7 @@
+const dataTamu = [
+  { nama: "Andi Wijaya", meja: "5", keterangan: "Keluarga Pria" },
+  { nama: "Siti Nurhaliza", meja: "8", keterangan: "VIP" },
+  { nama: "Budi Santoso", meja: "12", keterangan: "Rekan Kerja" },
+  { nama: "Dewi Lestari", meja: "3", keterangan: "Teman SMA" },
+  { nama: "Rudi Hartono", meja: "7", keterangan: "Keluarga Wanita" }
+];

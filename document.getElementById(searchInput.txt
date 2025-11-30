@@ -1,0 +1,23 @@
+document.getElementById("searchInput").addEventListener("input", function () {
+  const input = this.value.toLowerCase().trim();
+  const resultDiv = document.getElementById("result");
+
+  if (input.length < 2) {
+    resultDiv.innerHTML = "";
+    return;
+  }
+
+  const hasil = dataTamu.filter(t => t.nama.toLowerCase().includes(input));
+
+  if (hasil.length > 0) {
+    resultDiv.innerHTML = hasil.map(t =>
+      `<div class="card">
+        <h2>${t.nama}</h2>
+        <p>Anda duduk di <strong>Meja ${t.meja}</strong></p>
+        <p><em>${t.keterangan}</em></p>
+      </div>`
+    ).join("");
+  } else {
+    resultDiv.innerHTML = "<p>Nama tidak ditemukan. Coba periksa kembali ejaan nama Anda.</p>";
+  }
+});
